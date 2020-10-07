@@ -138,6 +138,7 @@ class ConditionerTest {
     public void checkIsOn() {
         assertEquals(false, conditioner.isOn());
     }
+
     @Test
     public void checkSeton() {
         conditioner.setOn();
