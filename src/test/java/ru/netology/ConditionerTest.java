@@ -5,9 +5,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConditionerTest {
+    Conditioner conditioner = new Conditioner();
+
     @Test
     public void shouldGetAndSet() {
-        Conditioner conditioner = new Conditioner();
+
         String expected = "Кондишн";
 
         assertNull(conditioner.getName());
@@ -17,7 +19,7 @@ class ConditionerTest {
 
     @Test
     public void shouldGetAndSetMinMaxTemperature() {
-        Conditioner conditioner = new Conditioner();
+
         int minTempExpected = 16;
         int maxTempExpected = 28;
 
@@ -30,7 +32,7 @@ class ConditionerTest {
 
     @Test
     public void SetCurrentTempBelowLimits() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature = 20;
@@ -44,7 +46,7 @@ class ConditionerTest {
 
     @Test
     public void SetCurrentTempOverLimits() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature1 = 30;
@@ -64,7 +66,7 @@ class ConditionerTest {
 
     @Test
     public void shouldIncreaseCurrentTemperature() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature = 20;
@@ -83,7 +85,7 @@ class ConditionerTest {
 
     @Test
     public void shouldIncreaseMaxCurrentTemperature() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature = 28;
@@ -101,7 +103,7 @@ class ConditionerTest {
 
     @Test
     public void shouldDecreaseCurrentTemperature() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature = 20;
@@ -118,7 +120,7 @@ class ConditionerTest {
 
     @Test
     public void shouldDecreaseMinCurrentTemperature() {
-        Conditioner conditioner = new Conditioner();
+
         int minTemperature = 16;
         int maxTemperature = 28;
         int currentTemperature = 16;
@@ -134,12 +136,10 @@ class ConditionerTest {
 
     @Test
     public void checkIsOn() {
-        Conditioner conditioner = new Conditioner();
         assertEquals(false, conditioner.isOn());
     }
     @Test
     public void checkSeton() {
-        Conditioner conditioner = new Conditioner();
         conditioner.setOn();
     }
 }
