@@ -142,6 +142,4 @@ class ConditionerTest {
         Conditioner conditioner = new Conditioner();
         conditioner.setOn();
     }
-
 }
-
